@@ -1,0 +1,59 @@
+@import "./base";
+@import "./home";
+@import "./typography";
+@import "./features";
+@import "./soon";
+@import "./footer";
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 50% !important;
+  }
+  #logo {
+    flex: 1 !important;
+  }
+
+  .showcase {
+    grid-template-columns: 10% 1fr 10% !important;
+    img {
+      width: 100% !important;
+      object-fit: contain !important;
+      margin-bottom: 4rem;
+    }
+
+    img,
+    h2,
+    .info {
+      grid-column: 2/3 !important;
+      text-align: center;
+    }
+  }
+
+  .features {
+      align-items: center;
+      h2 {
+          margin-bottom: 5rem;
+      }
+
+      .cards {
+          flex-direction: column;
+          width: 80%;
+          .card {
+              margin: 5rem 0rem;
+          }
+      }
+  }
+
+  .soon {
+      overflow: hidden;
+      img {
+          width: 70%;
+      }
+      h2 {
+          font-size: 5rem;
+          text-align: center;
+          position: absolute;
+          top: 10%;
+      }
+  }
+}
